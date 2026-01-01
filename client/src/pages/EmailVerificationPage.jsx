@@ -76,11 +76,11 @@ export const EmailVerificationPage = () =>{
         transition={{duration : 0.5}}
         className='bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-xl rounder-2xl shadow-2xl p-8 w-full'>
 
-        <h2 className='text-3xl font-bold mb-6 bg-gradient-to-r from-green-400 to-emerald-500
+        <h2 className='text-3xl font-bold mb-6 bg-gradient-to-r from-red-400 to-pink-500
         text-transparent bg-clip-text text-center' >
             Verify Your Email
         </h2>
-        <p className="text-center text-gray-300 mb-6">Enter the 6-digit code sent to your email address</p>
+        <p className="text-center text-gray-300 mb-6">Enter the 6-digit(123456) code sent to your email address</p>
 
         <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="flex justify-between">
@@ -94,14 +94,14 @@ export const EmailVerificationPage = () =>{
                     onChange={(e)=>handleChange(index,e.target.value)}
                     onKeyDown={(e) => handleKeyDown(index,e)}
                     className="w-12 h-12 text-center text-2xl font-bold bg-gray-700
-                    text-white border-2 border-gray-500 rounded-lg focus:border-green-500
+                    text-white border-2 border-gray-500 rounded-lg focus:border-red-500
                     focus:outline-none"/>
                 ))}
             </div>
             {error && <p className="text-red-500 font-semibold mt-2"></p>}
-            <motion.button className="w-full py-3 px-4 bg-gradient-to-r from-green-500
-                to-emerald-600 text-white font-bold rounded-lg shadow-lg hover:from-green-600 
-                hover:to-emerald-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2
+            <motion.button className="w-full py-3 px-4 bg-gradient-to-r from-red-500
+                to-pink-600 text-white font-bold rounded-lg shadow-lg hover:from-red-600 
+                hover:to-pink-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2
                 focus:ring-offset-gray-900 transition duration-200"
                 whilehover={{scale: 1.02}}
                 whiltetap={{sacle:0.98}}
