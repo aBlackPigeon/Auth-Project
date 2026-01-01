@@ -30,7 +30,7 @@ export const SignupPage = () => {
         initial = {{opacity: 0, y: 20}}
         animate={{opacity:1, y: 0}}
         transition={{duration : 0.5}}
-        className='max-w-md w-full bg-gray-800 bg-opacity-50 backdrop-filter backdrop-red-xl rounded-2xl shadow-xl
+        className='max-w-md w-full bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blue-xl rounded-2xl shadow-xl
         overflow-hidden'>
         <div className='p-8'>
             <h2 className='text-3xl font-bold mb-6 text-center bg-gradient-to-r from-red-400 to-pink-500
